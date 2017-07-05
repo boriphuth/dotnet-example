@@ -17,7 +17,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - "Data:DefaultConnection:ConnectionString=Server=db,1433;Database=MusicStore;User Id=sa;Password=Password1;MultipleActiveResultSets=True"
+      - "Data:DefaultConnection:ConnectionString=Server=db,1433;Database=KontenaAspnetCore;User Id=sa;Password=Password1;MultipleActiveResultSets=True"
     depends_on:
       - db
     ports:
