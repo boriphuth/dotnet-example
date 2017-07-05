@@ -13,7 +13,7 @@ namespace Kontena.Examples
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
-                .UseUrls("https://*:5000")
+                .UseUrls("http://*:5000")//.UseUrls("https://*:5000")
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
